@@ -39,39 +39,271 @@
  * Breakpoints & Media Queries
  */
 @media (min-width: 782px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-small,
-  .wp-block-column.has-responsive-settings.has-responsive-display-small {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-small {
     display: none;
   }
 }
 @media (min-width: 1080px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-small-medium,
-  .wp-block-column.has-responsive-settings.has-responsive-display-small-medium {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-small-medium {
     display: none;
   }
 }
 @media (max-width: 781px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-medium,
-  .wp-block-column.has-responsive-settings.has-responsive-display-medium {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-medium {
     display: none;
   }
 }
 @media (min-width: 1080px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-medium,
-  .wp-block-column.has-responsive-settings.has-responsive-display-medium {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-medium {
     display: none;
   }
 }
 @media (max-width: 781px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-medium-large,
-  .wp-block-column.has-responsive-settings.has-responsive-display-medium-large {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-medium-large {
     display: none;
   }
 }
 @media (max-width: 1079px) {
-  .wp-block-group.has-responsive-settings.has-responsive-display-large,
-  .wp-block-column.has-responsive-settings.has-responsive-display-large {
+  [class^=wp-block-].has-responsive-settings.has-responsive-display-large {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  [class^=wp-block-] .res-flex-direction-lg-row {
+    flex-direction: row;
+  }
+  [class^=wp-block-] .res-flex-direction-lg-column {
+    flex-direction: column;
+  }
+  [class^=wp-block-] .res-flex-direction-lg-row-reverse {
+    flex-direction: row-reverse;
+  }
+  [class^=wp-block-] .res-flex-direction-lg-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 780px) {
+  [class^=wp-block-] .res-flex-direction-md-row {
+    flex-direction: row;
+  }
+  [class^=wp-block-] .res-flex-direction-md-column {
+    flex-direction: column;
+  }
+  [class^=wp-block-] .res-flex-direction-md-row-reverse {
+    flex-direction: row-reverse;
+  }
+  [class^=wp-block-] .res-flex-direction-md-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 425px) {
+  [class^=wp-block-] .res-flex-direction-sm-row {
+    flex-direction: row;
+  }
+  [class^=wp-block-] .res-flex-direction-sm-column {
+    flex-direction: column;
+  }
+  [class^=wp-block-] .res-flex-direction-sm-row-reverse {
+    flex-direction: row-reverse;
+  }
+  [class^=wp-block-] .res-flex-direction-sm-column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1000px) {
+  [class^=wp-block-] .res-flex-wrap-lg-nowrap {
+    flex-wrap: nowrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-lg-wrap {
+    flex-wrap: wrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-lg-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 780px) {
+  [class^=wp-block-] .res-flex-wrap-md-nowrap {
+    flex-wrap: nowrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-md-wrap {
+    flex-wrap: wrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-md-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 425px) {
+  [class^=wp-block-] .res-flex-wrap-sm-nowrap {
+    flex-wrap: nowrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-sm-wrap {
+    flex-wrap: wrap;
+  }
+  [class^=wp-block-] .res-flex-wrap-sm-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 1000px) {
+  [class^=wp-block-] .res-justify-content-lg-flex-start {
+    justify-content: flex-start;
+  }
+  [class^=wp-block-] .res-justify-content-lg-flex-end {
+    justify-content: flex-end;
+  }
+  [class^=wp-block-] .res-justify-content-lg-center {
+    justify-content: center;
+  }
+  [class^=wp-block-] .res-justify-content-lg-space-between {
+    justify-content: space-between;
+  }
+  [class^=wp-block-] .res-justify-content-lg-space-around {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 780px) {
+  [class^=wp-block-] .res-justify-content-md-flex-start {
+    justify-content: flex-start;
+  }
+  [class^=wp-block-] .res-justify-content-md-flex-end {
+    justify-content: flex-end;
+  }
+  [class^=wp-block-] .res-justify-content-md-center {
+    justify-content: center;
+  }
+  [class^=wp-block-] .res-justify-content-md-space-between {
+    justify-content: space-between;
+  }
+  [class^=wp-block-] .res-justify-content-md-space-around {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 425px) {
+  [class^=wp-block-] .res-justify-content-sm-flex-start {
+    justify-content: flex-start;
+  }
+  [class^=wp-block-] .res-justify-content-sm-flex-end {
+    justify-content: flex-end;
+  }
+  [class^=wp-block-] .res-justify-content-sm-center {
+    justify-content: center;
+  }
+  [class^=wp-block-] .res-justify-content-sm-space-between {
+    justify-content: space-between;
+  }
+  [class^=wp-block-] .res-justify-content-sm-space-around {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1000px) {
+  [class^=wp-block-] .res-align-items-lg-stretch {
+    align-items: stretch;
+  }
+  [class^=wp-block-] .res-align-items-lg-flex-start {
+    align-items: flex-start;
+  }
+  [class^=wp-block-] .res-align-items-lg-flex-end {
+    align-items: flex-end;
+  }
+  [class^=wp-block-] .res-align-items-lg-center {
+    align-items: center;
+  }
+  [class^=wp-block-] .res-align-items-lg-baseline {
+    align-items: baseline;
+  }
+}
+@media (max-width: 780px) {
+  [class^=wp-block-] .res-align-items-md-stretch {
+    align-items: stretch;
+  }
+  [class^=wp-block-] .res-align-items-md-flex-start {
+    align-items: flex-start;
+  }
+  [class^=wp-block-] .res-align-items-md-flex-end {
+    align-items: flex-end;
+  }
+  [class^=wp-block-] .res-align-items-md-center {
+    align-items: center;
+  }
+  [class^=wp-block-] .res-align-items-md-baseline {
+    align-items: baseline;
+  }
+}
+@media (max-width: 425px) {
+  [class^=wp-block-] .res-align-items-sm-stretch {
+    align-items: stretch;
+  }
+  [class^=wp-block-] .res-align-items-sm-flex-start {
+    align-items: flex-start;
+  }
+  [class^=wp-block-] .res-align-items-sm-flex-end {
+    align-items: flex-end;
+  }
+  [class^=wp-block-] .res-align-items-sm-center {
+    align-items: center;
+  }
+  [class^=wp-block-] .res-align-items-sm-baseline {
+    align-items: baseline;
+  }
+}
+@media (max-width: 1000px) {
+  [class^=wp-block-] .res-align-content-lg-stretch {
+    align-content: stretch;
+  }
+  [class^=wp-block-] .res-align-content-lg-flex-start {
+    align-content: flex-start;
+  }
+  [class^=wp-block-] .res-align-content-lg-flex-end {
+    align-content: flex-end;
+  }
+  [class^=wp-block-] .res-align-content-lg-center {
+    align-content: center;
+  }
+  [class^=wp-block-] .res-align-content-lg-space-between {
+    align-content: space-between;
+  }
+  [class^=wp-block-] .res-align-content-lg-space-around {
+    align-content: space-around;
+  }
+}
+@media (max-width: 780px) {
+  [class^=wp-block-] .res-align-content-md-stretch {
+    align-content: stretch;
+  }
+  [class^=wp-block-] .res-align-content-md-flex-start {
+    align-content: flex-start;
+  }
+  [class^=wp-block-] .res-align-content-md-flex-end {
+    align-content: flex-end;
+  }
+  [class^=wp-block-] .res-align-content-md-center {
+    align-content: center;
+  }
+  [class^=wp-block-] .res-align-content-md-space-between {
+    align-content: space-between;
+  }
+  [class^=wp-block-] .res-align-content-md-space-around {
+    align-content: space-around;
+  }
+}
+@media (max-width: 425px) {
+  [class^=wp-block-] .res-align-content-sm-stretch {
+    align-content: stretch;
+  }
+  [class^=wp-block-] .res-align-content-sm-flex-start {
+    align-content: flex-start;
+  }
+  [class^=wp-block-] .res-align-content-sm-flex-end {
+    align-content: flex-end;
+  }
+  [class^=wp-block-] .res-align-content-sm-center {
+    align-content: center;
+  }
+  [class^=wp-block-] .res-align-content-sm-space-between {
+    align-content: space-between;
+  }
+  [class^=wp-block-] .res-align-content-sm-space-around {
+    align-content: space-around;
   }
 }
 

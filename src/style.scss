@@ -1,8 +1,7 @@
 @import "@wordpress/base-styles/mixins";
 @import "@wordpress/base-styles/breakpoints";
 
-.wp-block-group,
-.wp-block-column {
+[class^="wp-block-"] {
 	&.has-responsive-settings {
 		&.has-responsive-display-small {
 			@include break-medium() {
@@ -33,4 +32,54 @@
 			}
 		}
 	}
+}
+
+
+$breakpoints: (
+	lg: 1000px,
+	md: 780px,
+	sm: 425px,
+);
+
+@mixin breakpoint($point) {
+  @if map-has-key($breakpoints, $point) {
+    $breakpoint: map-get($breakpoints, $point);
+
+    @if $point == large {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+
+// Define a map of properties and corresponding values
+$properties: (
+  "flex-direction": (row, column, row-reverse, column-reverse),
+  "flex-wrap": (nowrap, wrap, wrap-reverse),
+  "justify-content": (flex-start, flex-end, center, space-between, space-around),
+  "align-items": (stretch, flex-start, flex-end, center, baseline),
+  "align-content": (stretch, flex-start, flex-end, center, space-between, space-around),
+);
+
+[class^="wp-block-"] {
+  .res {
+    @each $property, $values in $properties {
+      &-#{$property} {
+        @each $point in map-keys($breakpoints) {
+          @include breakpoint($point) {
+            @each $value in $values {
+              &-#{$point}-#{$value} {
+                #{$property}: $value;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

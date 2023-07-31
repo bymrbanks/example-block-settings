@@ -74,5 +74,60 @@
     opacity: 0.5;
   }
 }
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/ui-style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+.select-btn__btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  border-radius: 2px;
+  transition: color 0.2s ease-in-out;
+}
+.select-btn__btn:hover {
+  border: 1px solid rgba(211, 211, 211, 0.5);
+}
+.select-btn__btn svg {
+  width: 20px;
+  height: 20px;
+}
+.select-btn__group {
+  padding: 2px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  border: 1px solid transparent;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.select-btn__group:hover {
+  border: 1px solid black;
+}
+.select-btn__ui {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.select-btn__label {
+  text-transform: capitalize;
+  color: #585858;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.select-btn__label span {
+  color: black;
+  font-weight: 600;
+}
+
+button[aria-selected=true] {
+  border-bottom: 2px solid #007cba;
+}
 
 /*# sourceMappingURL=index.css.map*/

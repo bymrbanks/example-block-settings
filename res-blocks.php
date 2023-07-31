@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Example Block Settings
+ * Plugin Name:       Responsive Blocks
  * Description:       Example block settings plugin.
  * Requires at least: 6.1
  * Requires PHP:      7.0
